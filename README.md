@@ -26,6 +26,7 @@ Varje menyobjekt innehåller följande fält:
 
 | Fält | Datatyp | Beskrivning |
 |---|---|---|
+| _id | ObjectId | Unikt id som skapas automatiskt av MongoDB |
 | name | String | Namn på maträtten eller drycken |
 | category | String | Kategori, till exempel Mat eller Dryck |
 | description | String | Beskrivning av menyobjektet |
@@ -38,7 +39,6 @@ Nedan beskrivs hur API:et kan användas:
 
 | Metod | Ändpunkt | Skyddad | Beskrivning |
 |---|---|---|---|
-| _id | ObjectId | Unikt id som skapas automatiskt av MongoDB |
 | GET | `/` | Nej | Testar att API:et är igång |
 | POST | `/api/auth/register` | Nej | Skapar ett nytt användarkonto |
 | POST | `/api/auth/login` | Nej | Loggar in användare och returnerar JWT-token |
